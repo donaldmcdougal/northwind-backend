@@ -8,8 +8,8 @@ This project is intended for use in prototyping frontend work and does a pretty 
 1. [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) if it is not already installed.
 1. [Maven](https://maven.apache.org/download.cgi) if it is not already installed. Make sure that Maven runs from the command line.
 1. The Northwind MySQL database.  Navigate to the project's `src/main/resources` directory.
-   1. Execute the contents of either northwind.sql or northwind-default-current-timestamp.sql within MySQL server.
-   1. Execute the contents of northwind-data.sql within MySQL server.
+   1. Execute the contents of either `northwind.sql` or `northwind-default-current-timestamp.sql` within MySQL server.
+   1. Execute the contents of `northwind-data.sql` within MySQL server.
 
 ## Building
 In your terminal, navigate to the project's root directory.  Then, type `mvn clean package` to build an executable WAR file of the code.
