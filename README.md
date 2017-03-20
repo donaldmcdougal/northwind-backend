@@ -18,4 +18,5 @@ In your terminal, navigate to the project's root directory.  Then, type `mvn cle
 1. In your terminal, navigate to the project's `target` directory.  Execute `java -jar northwind-1.0.0.war` from the command line.
 1. Navigate to [localhost:8080](http://localhost:8080/).  This will contain some JSON output that attempts to show you how to use the service.  On all the URLs shown there I think, you can omit the parameters at the end of the URL to retrieve the first page of data for any data type.
 
+## Warning
 This project is definitely not for production use.  It allows requests from any origin and doesn't authenticate requests of any kind.  As long as it understands a request, it will simply carry it out.
