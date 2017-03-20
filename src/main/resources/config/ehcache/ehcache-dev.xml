@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns='http://www.ehcache.org/v3'
+         xsi:schemaLocation="http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.0.xsd">
+
+    <cache-template name="simple">
+        <expiry>
+            <ttl unit="seconds">3600</ttl>
+        </expiry>
+        <heap unit="entries">100</heap>
+    </cache-template>
+
+	<cache alias="com.donaldmcdougal.northwind.domain.Customer" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Employee" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Employee.privileges" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.InventoryTransaction" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.InventoryTransaction.transactionType" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.InventoryTransaction.product" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.InventoryTransaction.purchaseOrder" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.InventoryTransaction.customerOrder" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.InventoryTransactionType" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Invoice" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Invoice.order" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Order" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Order.employee" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Order.customer" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Order.shipper" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Order.taxStatus" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Order.status" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.OrderDetail" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.OrderDetail.order" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.OrderDetail.product" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.OrderDetail.status" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.OrderDetailStatus" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.OrderStatus" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.OrderTaxStatus" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Privilege" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Product" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.PurchaseOrder" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.PurchaseOrder.supplier" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.PurchaseOrder.createdBy" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.PurchaseOrder.status" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.PurchaseOrder.approvedBy" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.PurchaseOrder.submittedBy" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.PurchaseOrderDetail" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.PurchaseOrderDetail.purchaseOrder" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.PurchaseOrderDetail.product" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.PurchaseOrderDetail.inventoryTransaction" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.PurchaseOrderStatus" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Shipper" uses-template="simple"/>
+	
+	<cache alias="com.donaldmcdougal.northwind.domain.Supplier" uses-template="simple"/>
+	
+    <!-- jhipster-needle-ehcache-add-entry -->
+</config>
